@@ -23,7 +23,20 @@
     </pre>
     <pre>
         <?php
-
+        $title = 'Title';
+        if (isset($title)) {
+            echo "<h1>{$title}</h1>";
+        }
+        ?>
+    </pre>
+    <pre>
+        <?php
+        $title = false;
+        if (empty($title)) {
+            echo "<h1>New title</h1>";
+        } else {
+            echo "<h1>{$title}</h1>";
+        }
         ?>
     </pre>
 </body>

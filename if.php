@@ -39,6 +39,38 @@
         }
         ?>
     </pre>
+    <pre>
+        <?php
+        var_dump(true && false);
+        var_dump(true && true);
+        var_dump(false && false);
+        var_dump(false && true);
+        ?>
+    </pre>
+    <pre>
+        <?php
+        var_dump(true || false);
+        var_dump(true || true);
+        var_dump(false || false);
+        var_dump(false || true);
+        ?>
+    </pre>
+    <pre>
+        <?php
+        var_dump(true xor false);
+        var_dump(true xor true);
+        var_dump(false xor false);
+        var_dump(false xor true);
+        ?>
+    </pre>
+    <pre>
+        <?php
+        $num = 5;
+        if ($num > 3 && $num < 10) {
+            echo '<h1>5</h1>';
+        }
+        ?>
+    </pre>
 </body>
 
 </html>

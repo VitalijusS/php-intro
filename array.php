@@ -21,7 +21,13 @@
         var_dump(in_array('History', $arr2));
 
         var_dump(count($arr2));
+        $arr2[2] = "Math";
+        //unset($arr2[3]);removes element but keeps order
+        $arr2[99] = 'Art';
+        $arr2[] = 'Literature'; //adds next
 
+        $names = ['Bill', 'Tom', 'Ben', 'Brad', 'Chad', 'Ted',];
+        echo "\n " . $names[rand(0, count($names) - 1)];
         ?>
     </pre>
 </body>

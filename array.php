@@ -28,6 +28,10 @@
 
         $names = ['Bill', 'Tom', 'Ben', 'Brad', 'Chad', 'Ted',];
         echo "\n " . $names[rand(0, count($names) - 1)];
+        $names[] = 'Ted';
+        var_dump(array_unique($names));
+        var_dump(sort($names));
+
         ?>
     </pre>
 </body>

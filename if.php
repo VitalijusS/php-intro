@@ -71,6 +71,18 @@
         }
         ?>
     </pre>
+    <pre>
+        <?php
+        $name = 'Jan';
+        if ($name === "Jan") {
+            echo "The name is Jan";
+        }
+
+        if ($name === "Jan") echo "The name is Jan";
+
+        echo ($name === 'Jan' ? 'The name is Jan' : '')
+        ?>
+    </pre>
 </body>
 
 </html>

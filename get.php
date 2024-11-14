@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <form action="get.php" method="GET">
+        <input type="text" name="book" value="<?php if (!empty($_GET['book'])) echo $_GET['book']; ?>">
+        <input type="submit">
+    </form>
     <pre>
         <?php
         if (!empty($_GET['book'])) {
